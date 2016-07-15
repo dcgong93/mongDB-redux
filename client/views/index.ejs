@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Quoting Dojo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script>
+      $(document).ready(function(){
+        console.log("hello");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to QuotingDojo</h1>
+      <form action="/quotes" method="post">
+        Your Name: <input type="text" name="name" /><br />
+        Your Quote: <textarea name="quote" rows="5" cols="30"></textarea><br />
+        <input type="submit" name="submit" />
+      </form>
+      <a href="/quotes">Skip to quotes!</a>
+    </div>
+  </body>
+</html>
